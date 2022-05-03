@@ -1,4 +1,4 @@
-package com.example.folha.entidades;
+package com.example.folha.model;
 
 import javax.persistence.*;
 
@@ -25,6 +25,7 @@ public class Vinculo_rubrica {
     public Vinculo_rubrica(Vinculo_rubricaID vinculo_rubricaId, Double valor) {
         this.vinculo_rubricaId = vinculo_rubricaId;
         this.valor = valor;
+        
     }
 
     public Vinculo_rubrica() {}

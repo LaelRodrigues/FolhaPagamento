@@ -1,4 +1,4 @@
-package com.example.folha.entidades;
+package com.example.folha.model;
 
 import javax.persistence.*;
 import java.util.List;

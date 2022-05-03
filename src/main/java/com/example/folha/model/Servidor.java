@@ -1,8 +1,9 @@
-package com.example.folha.entidades;
-
-import com.example.folha.entidades.Vinculo;
+package com.example.folha.model;
 
 import javax.persistence.*;
+
+import com.example.folha.model.Vinculo;
+
 import java.util.List;
 
 @Entity
