@@ -1,9 +1,10 @@
 package com.example.folha.entidades;
 
 import javax.persistence.*;
+import java.util.List;
 
 @Entity
-@Table(name = "Vinculo")
+@Table(name = "vinculo")
 public class Vinculo {
 
     @Id
@@ -14,6 +15,10 @@ public class Vinculo {
     @ManyToOne
     @JoinColumn(name = "servidor_id")
     private Servidor servidor;
+
+    @OneToMany(mappedBy = "vinculo")
+    private List<Vinculo_rubrica> viculosRubricas;
+
 
     public Vinculo() {}
 
